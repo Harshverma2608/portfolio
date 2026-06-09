@@ -16,7 +16,7 @@ const skillGroups = [
   {
     label: "Tools & Core",
     emoji: "🛠️",
-    skills: ["Git & GitHub", "Postman", "VS Code", "Vercel", "Problem Solving", "Clean Code"],
+    skills: ["Git & GitHub", "Postman", "VS Code", "Vercel", "Figma", "UI/UX Design", "Problem Solving", "Clean Code"],
     color: "amber",
   },
 ];
