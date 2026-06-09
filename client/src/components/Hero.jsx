@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="relative">
           <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-white shadow-2xl">
             <img
-              src="/avatar.jpg.png"
+              src="/avatar.png"
               alt="Harsh Verma"
               className="w-full h-full object-cover object-top scale-110"
             />

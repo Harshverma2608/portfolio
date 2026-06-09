@@ -39,7 +39,7 @@ export default function About() {
               {/* Frame accent */}
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-emerald-300 rounded-sm pointer-events-none" />
               <img
-                src="/avatar.jpg.png"
+                src="/avatar.png"
                 alt="Harsh Verma"
                 className="w-full h-full object-cover object-top rounded-sm shadow-2xl"
               />
