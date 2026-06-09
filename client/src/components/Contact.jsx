@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from "../api";
 import { Send, Mail, MapPin, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 import { SectionLabel } from "./About";
@@ -14,7 +14,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("loading");
     try {
-      await axios.post("/api/contact", form);
+      await api.post("/api/contact", form);
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
     } catch {

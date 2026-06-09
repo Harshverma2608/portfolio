@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../api";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { SectionLabel } from "./About";
@@ -47,7 +47,7 @@ export default function Projects() {
   const [projects, setProjects] = useState(STATIC_PROJECTS);
 
   useEffect(() => {
-    axios.get("/api/projects")
+    api.get("/api/projects")
       .then((res) => { if (res.data?.length) setProjects(res.data); })
       .catch(() => {});
   }, []);
