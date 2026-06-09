@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Geist:wght@300;400;500;600;700&family=Mrs+Saint+Delafield&family=Style+Script&family=Great+Vibes&family=Unna:ital,wght@0,400;0,700;1,400&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-anton: "Anton", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-geist: "Geist", sans-serif;
+  --font-mrs: "Mrs Saint Delafield", cursive;
+  --font-style: "Style Script", cursive;
+  --font-great: "Great Vibes", cursive;
+  --font-unna: "Unna", serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-geist);
+    @apply bg-[#f5f4f0] text-[#1a1a2e] antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent;
+  }
+  .section-bg { background-color: #f0efe9; }
+  .card-shadow { box-shadow: 0 2px 20px 0 rgba(30,40,30,0.08); }
+  .nav-blur {
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+  .tag-green { @apply bg-emerald-50 text-emerald-700 border border-emerald-200; }
+  .tag-teal  { @apply bg-teal-50 text-teal-700 border border-teal-200; }
+  .tag-amber { @apply bg-amber-50 text-amber-700 border border-amber-200; }
+}
