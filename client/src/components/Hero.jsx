@@ -85,7 +85,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="/Harsh-Verma-Resume.pdf"
+            href="/Harsh_Verma_Resume.pdf"
             download
             className="px-8 py-3 rounded-full border-2 border-stone-200 bg-white text-stone-700 text-sm font-semibold flex items-center gap-2 hover:border-emerald-400 hover:text-emerald-600 transition-all duration-200 shadow-sm"
             style={{ fontFamily: "var(--font-oswald)", letterSpacing: "0.06em" }}
